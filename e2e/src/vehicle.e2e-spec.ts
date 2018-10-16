@@ -8,8 +8,8 @@ describe('workspace-project App', () => {
     page = new VehiclePage();
   });
 
-  // it('should display welcome message', () => {
-  //   page.navigateTo();
-  //   expect(page.getParagraphText()).toEqual('Welcome to Vehicle page!');
-  // });
+  it('should display vehicle message', () => {
+    page.navigateTo();
+    expect(page.getParagraphText()).toEqual('Welcome to Vehicle page!');
+  });
 });

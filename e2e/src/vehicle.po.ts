@@ -2,7 +2,7 @@ import { browser, by, element } from 'protractor';
 
 export class VehiclePage {
   navigateTo() {
-    return browser.get('/#/vehicle');
+    return browser.get('/vehicle');
   }
 
   getParagraphText() {

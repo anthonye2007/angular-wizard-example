@@ -11,9 +11,4 @@ describe('workspace-project App', () => {
     page.navigateTo();
     expect(page.getParagraphText()).toEqual('Welcome to angular-sample!');
   });
-
-  it('should display welcome message for vehicle', () => {
-    page.navigateTo();
-    expect(page.getVehicleText()).toEqual('Welcome to Vehicle page!');
-  });
 });

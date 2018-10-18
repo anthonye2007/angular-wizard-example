@@ -24,7 +24,7 @@ pipeline {
                         --net=host \
                         --rm \
                         --name protractor-test \
-                        -v .:/protractor/project \
+                        -v $PWD:/protractor/project \
                         anthonye2007/docker-protractor yarn e2e'
             }
         }

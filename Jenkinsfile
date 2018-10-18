@@ -1,11 +1,9 @@
 pipeline {
-    agent { docker { image 'node:10' } }
+    agent { any }
     stages {
         stage('versions') {
             steps {
                 sh 'npm --version'
-                sh 'echo $USER'
-                sh 'lsb_release -a'
             }
         }
         stage('install') {

@@ -4,6 +4,7 @@ pipeline {
         stage('versions') {
             steps {
                 sh 'npm --version'
+                sh 'echo pwd: ${pwd()}'
             }
         }
         stage('install') {

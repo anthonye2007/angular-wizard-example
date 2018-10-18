@@ -1,9 +1,14 @@
 pipeline {
-    agent { docker { image 'node:6.3' } }
+    agent { docker { image 'node:10' } }
     stages {
         stage('versions') {
             steps {
                 sh 'npm --version'
+            }
+        }
+        stage('install') {
+            steps {
+                sh 'yarn install'
             }
         }
     }

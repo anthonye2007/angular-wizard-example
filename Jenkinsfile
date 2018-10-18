@@ -18,7 +18,7 @@ pipeline {
         }
         stage('e2e tests') {
             steps {
-                sh './run-e2e-tests.sh'
+                sh 'docker pull anthonye2007/docker-protractor'
             }
         }
     }

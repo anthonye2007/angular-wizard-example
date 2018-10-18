@@ -4,6 +4,8 @@ pipeline {
         stage('versions') {
             steps {
                 sh 'npm --version'
+                sh 'echo $USER'
+                sh 'lsb_release -a'
             }
         }
         stage('install') {

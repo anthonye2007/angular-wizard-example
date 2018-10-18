@@ -4,7 +4,7 @@ pipeline {
         stage('versions') {
             steps {
                 sh 'npm --version'
-                sh 'echo pwd: ${pwd()}'
+                sh 'echo pwd: ${WORKSPACE}'
             }
         }
         stage('install') {

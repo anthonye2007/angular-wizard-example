@@ -19,7 +19,7 @@ pipeline {
         stage('e2e tests') {
             steps {
                 sh 'docker pull anthonye2007/docker-protractor'
-                sh 'docker run -it \
+                sh 'docker run \
                         --privileged \
                         --net=host \
                         --rm \
